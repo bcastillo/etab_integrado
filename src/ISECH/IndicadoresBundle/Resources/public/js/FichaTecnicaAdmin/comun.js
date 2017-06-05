@@ -1284,7 +1284,7 @@ function acciones_button()
         $.get(Routing.generate('get_indicador_ficha',{id: $('#' + zona + ' .titulo_indicador').attr('data-id')}),
         function(resp) 
 		{
-			
+			            
             $('#sql').html(resp);
             //Dejar solo el código html de la tabla, quitar todo lo demás
 
