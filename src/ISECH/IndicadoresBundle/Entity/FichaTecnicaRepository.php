@@ -407,6 +407,7 @@ class FichaTecnicaRepository extends EntityRepository
                 $significado = $this->getEntityManager()->getRepository('IndicadoresBundle:SignificadoCampo')
                         ->findOneBy(array('codigo' => $campo));
                 $catalogo = $significado->getCatalogo();
+
                 $sql_ctl = '';
                 if ($catalogo != '') {
                     $sql_ctl = "SELECT id FROM $catalogo WHERE descripcion ='$valor'";
