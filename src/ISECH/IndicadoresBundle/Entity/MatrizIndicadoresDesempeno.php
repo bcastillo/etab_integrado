@@ -39,7 +39,7 @@ class MatrizIndicadoresDesempeno
     /**
      * @var string
      *
-     * @ORM\Column(name="orden", type="string", length=4, nullable=true)
+     * @ORM\Column(name="orden", type="integer", length=4, nullable=true)
      */
     private $orden;
 
